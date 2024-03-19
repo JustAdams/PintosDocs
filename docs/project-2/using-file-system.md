@@ -3,7 +3,7 @@ layout: default
 title: Using the File System
 parent: Background
 grand_parent: Project 2
-nav_order: 3
+nav_order: 2
 ---
 
 ### 3.1.2 Using the File System
