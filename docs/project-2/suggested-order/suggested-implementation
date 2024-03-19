@@ -1,0 +1,30 @@
+---
+layout: default
+title: Suggested Order of Implementation
+parent: Project 2
+nav_order: 1
+---
+
+### 3.2 Suggested Order of Implementation
+
+Before you begin this portion of the project, test your knowledge of the code by answering the Code Reading Questions. Being able to answer those questions before you begin coding will significantly help you.
+
+We suggest first implementing the following, which can happen in parallel:
+
+For now, change process_wait() to an infinite loop (one that waits forever). The provided implementation returns immediately, so Pintos will power off before any processes actually get to run. You will eventually need to provide a correct implementation, as no tests will pass with this implementation. (With this suggested implementation, Pintos will hang forever, but at least you'll get to see output from the child processes!)
+Argument passing (see section 3.3.3 Argument Passing). Every user program will page fault immediately until argument passing is implemented.
+For now, you may simply wish to change
+
+ 	
+*esp = PHYS_BASE;
+to
+ 	
+*esp = PHYS_BASE - 12;
+in setup_stack(). That will work for any test program that doesn't examine its arguments, although its name will be printed as (null). (Note: This is a temporary fix, you must fully implement argument passing in this project.)
+Until you implement argument passing, you should only run programs without passing command-line arguments. Attempting to pass arguments to a program will include those arguments in the name of the program, which will probably fail. (Recall that arguments are passed on the stack.)
+
+User memory access (see section 3.1.5 Accessing User Memory). All system calls need to read user memory. Few system calls need to write to user memory.
+System call infrastructure (see section 3.3.4 System Calls). Implement enough code to read the system call number from the user stack and dispatch to a handler based on it.
+The write system call for writing to fd 1, the system console. All of our test programs write to the console (the user process version of printf() is implemented this way), so they will all malfunction until write is available.
+The exit system call. Every user program that finishes in the normal way calls exit. Even a program that returns from main() calls exit indirectly (see _start() in lib/user/entry.c).
+After the above are implemented, user processes should work minimally. At the very least, they can write to the console and exit correctly. Pintos, however, will not exit correctly until process_wait() is fully implemented, so you cannot rely on make check to test your code until that point. You can then refine your implementation so that some of the tests start to pass.
