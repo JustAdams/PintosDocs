@@ -1,3 +1,10 @@
+---
+layout: default
+title: Using the File System
+parent: Background
+nav_order: 2
+---
+
 ### 3.1.2 Using the File System
 
 You will need to interface to the file system code for this project, because a) user programs are loaded from the file system and b) many of the system calls you must implement deal with the file system. However, the focus of this project is not the file system, so we have provided a simple but complete file system in the filesys directory. You will want to look over the filesys.h and file.h interfaces to understand how to use the file system and its many limitations.
