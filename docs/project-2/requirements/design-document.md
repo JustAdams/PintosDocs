@@ -3,6 +3,7 @@ layout: default
 title: Design Document
 parent: Requirements
 grand_parent: Project 2
+nav_order: 1
 ---
 
 ## 3.3.1 Design Document
