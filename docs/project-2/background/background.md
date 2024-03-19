@@ -4,7 +4,6 @@ title: Background
 nav_order: 1
 parent: Project 2
 has_children: true
-permalink: /docs/project-2/background
 ---
 
 ## 3.1 Background
