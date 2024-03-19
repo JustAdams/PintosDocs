@@ -1,3 +1,10 @@
+---
+layout: default
+title: Design Document
+parent: Requirements
+grand_parent: Project 2
+---
+
 ## 3.3.1 Design Document
 
 In addition to submitting your source code, your group is responsible for explaining and defending your project's design to us.
