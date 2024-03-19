@@ -3,7 +3,7 @@ layout: default
 title: How User Programs Work
 parent: Background
 grand_parent: Project 2
-nav_order: 4
+nav_order: 3
 ---
 
 ### 3.1.3 How User Programs Work
