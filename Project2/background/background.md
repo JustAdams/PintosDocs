@@ -1,3 +1,11 @@
+---
+layout: default
+title: Background
+nav_order: 3
+has_children: true
+permalink: /docs/project-2/background
+---
+
 ## 3.1 Background
 
 Up to now, all of the code you have run under Pintos has been part of the operating system kernel--even the test code from the last assignment ran as part of the kernel and had full access to privileged parts of the system. However, for user programs running on top of the operating system access is restricted. This project deals with the consequences.
