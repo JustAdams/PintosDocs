@@ -4,7 +4,6 @@ title: Source Files
 parent: Background
 grand_parent: Project 2
 nav_order: 1
-permalink: /docs/project-2/background/source-files
 ---
 
 ### 3.1.1 Source Files
