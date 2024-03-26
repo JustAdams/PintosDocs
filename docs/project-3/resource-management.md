@@ -3,7 +3,7 @@ layout: default
 title: Resource Management Overview
 parent: Background
 grandparent: Project 3
-nav_order: 4
+nav_order: 3
 ---
 
 ### 4.1.3 Resource Management Overview
