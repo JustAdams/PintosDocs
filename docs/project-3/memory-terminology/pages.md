@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How User Programs Work
+title: Pages
 parent: Memory Terminology
 grand_parent: Project 3
 nav_order: 1
