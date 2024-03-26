@@ -1,3 +1,11 @@
+---
+layout: default
+title: Source Files
+parent: Background
+grand_parent: Project 3
+nav_order: 1
+---
+
 ### 4.1.1 Source Files
 
 Since this project is built on top of project 2, you'll want to make a copy of your completed project 2 code to get started.
